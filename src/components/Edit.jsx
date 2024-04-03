@@ -17,7 +17,6 @@ function Edit() {
         // console.log(id);
         // console.log(editproduct);
         if (!editproduct) {
-            console.log('hia');
             const productToEdit = products.find(product => product.id === parseInt(id));
             setEditProduct(productToEdit);
         }
