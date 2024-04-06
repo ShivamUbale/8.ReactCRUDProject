@@ -13,8 +13,6 @@ function Home() {
     const { search } = useLocation();
     const unique_category = decodeURIComponent(search.split('=')[1]);
 
-    // console.log(unique_category);
-
     const [category_products, setCategoryProducts] = useState(null);
 
     useEffect(() => {
@@ -38,8 +36,7 @@ function Home() {
 
     }, [search, unique_category, products]);
 
-    // console.log("Category Products:", category_products);
-    // console.log("HomePage", products);
+   
     return (category_products ? (
         <>
             <Navbar />

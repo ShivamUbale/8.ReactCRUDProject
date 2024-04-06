@@ -16,9 +16,6 @@ function App() {
 
   };
 
-  useEffect(() => {
-    
-  }, [isDarkMode])
 
   return (
     <div className={`w-screen h-screen flex ${isDarkMode ? 'bg-zinc-800' : 'bg-white'}`} >
